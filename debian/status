@@ -1,0 +1,1386 @@
+Package: icaclient
+Status: install ok installed
+Priority: extra
+Section: utils
+Installed-Size: 46911
+Maintainer: Citrix Systems, Inc. <debian.package.support@citrix.com>
+Architecture: amd64
+Version: 13.4.0.10109380
+Depends: libc6 (>= 2.13-38), libice6 (>= 1:1.0.0), libgtk2.0-0 (>= 2.12.0), libsm6, libx11-6, libxext6, libxmu6, libxpm4, libasound2, libstdc++6, libwebkit-1.0-2 | libwebkitgtk-1.0-0, libidn11, zlib1g
+Pre-Depends: debconf (>= 0.5)
+Recommends: libglib2.0-0 (>= 2.12.0), libgstreamer-plugins-base0.10-0 (>= 0.10.15), libgstreamer0.10-0 (>= 0.10.15), libspeex1, libvorbis0a, libvorbisenc2, libcanberra-gtk-module
+Suggests: libpcsclite1
+Conffiles:
+ /etc/icaclient/nls/es/module.ini 023fe5ab580b93cd1609d0c3b0075860
+ /etc/icaclient/nls/zh_HANS/module.ini 023fe5ab580b93cd1609d0c3b0075860
+ /etc/icaclient/nls/en/module.ini 023fe5ab580b93cd1609d0c3b0075860
+ /etc/icaclient/nls/ja/module.ini 99af559ebcb6eeff0b72b00362891237
+ /etc/icaclient/nls/de/module.ini c296e5bb9676e8bcb952577eb269965c
+ /etc/icaclient/nls/fr/module.ini 023fe5ab580b93cd1609d0c3b0075860
+ /etc/icaclient/config/regions.ini 570a6f2df0147af5c1ae574f56a2e0c1
+ /etc/icaclient/config/All_Regions.ini 8811f59821f838130f7986f4c0964adb
+ /etc/icaclient/config/Unknown_Region.ini 6f892e2876e51729f8deb7bb329d0435
+ /etc/icaclient/config/canonicalization.ini cdc3a64aa5173498baca07954cd37cd9
+ /etc/icaclient/config/Untrusted_Region.ini d64e480a1e3aee91388e493986bc50a1
+ /etc/icaclient/config/MediaStreamingConfig.tbl 6193b72ad323883e63696bdc8dab8cef
+ /etc/icaclient/config/usertemplate/All_Regions.ini d48a7806fcf902fab89700a4e1099c02
+ /etc/icaclient/config/usertemplate/Unknown_Region.ini 815ed196596fc20d3b250743f91719c1
+ /etc/icaclient/config/usertemplate/Untrusted_Region.ini ad4d6e982ec7c3e0297cd27843864281
+ /etc/icaclient/config/usertemplate/Trusted_Region.ini 1c2d6356d76110531d85da0548a4953b
+ /etc/icaclient/config/Trusted_Region.ini 9eea9fe63c32ddb140c31eee1414dc24
+Description: Citrix Receiver for Linux
+ Citrix Receiver lets you access your enterprise files, applications, and
+ desktops from your favorite device wherever you are. Just ask your IT
+ department how to get started.
+Homepage: http://www.citrix.com
+
+Package: libgtop-2.0-11
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 105
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libgtop2
+Version: 2.38.0-2ubuntu0.18.04.1
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.18.0), libxau6, libgtop2-common (>= 2.38.0-2ubuntu0.18.04.1)
+Description: gtop system monitoring library (shared)
+ The gtop library reads information about processes and the state of the
+ system. It is used by the GNOME desktop environment.
+ .
+ This package contains the shared library.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libxcursor-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 127
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxcursor
+Version: 1:1.1.15-1
+Depends: libxcursor1 (= 1:1.1.15-1), x11proto-core-dev, libx11-dev, libxrender-dev, libxfixes-dev
+Description: X cursor management library (development files)
+ Header files and a static version of the X cursor management library are
+ provided by this package.
+ .
+ See the libxcursor1 package for further information.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Homepage: https://www.x.org
+
+Package: libcommon-sense-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 50
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.74-2build2
+Depends: perl (>= 5.26.1~), perlapi-5.26.1, perl (<< 5.26.2~)
+Description: module that implements some sane defaults for Perl programs
+ common::sense implements some sane defaults for Perl programs, as defined by
+ two typical (or not so typical - use your common sense) specimens of Perl
+ coders.
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Homepage: http://search.cpan.org/dist/common-sense/
+
+Package: aptdaemon-data
+Status: install ok installed
+Priority: extra
+Section: admin
+Installed-Size: 247
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: aptdaemon
+Version: 1.1.1+bzr982-0ubuntu19.5
+Replaces: python-aptdaemon-gtk (<= 0.41+bzr580-0ubuntu1)
+Description: data files for clients
+ Aptdaemon is a transaction based package management daemon. It allows
+ normal users to perform package management tasks, e.g. refreshing the
+ cache, upgrading the system, installing or removing software packages.
+ .
+ This package provides common data files (e.g. icons) for aptdaemon
+ clients.
+Homepage: https://launchpad.net/aptdaemon
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+
+Package: linux-modules-extra-4.15.0-88-generic
+Status: deinstall ok config-files
+Priority: optional
+Section: kernel
+Installed-Size: 165571
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux
+Version: 4.15.0-88.88
+Config-Version: 4.15.0-88.88
+Depends: linux-image-4.15.0-88-generic | linux-image-unsigned-4.15.0-88-generic, crda | wireless-crda
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+ This package contains the Linux kernel extra modules for version 4.15.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: virt-viewer
+Status: install ok installed
+Priority: extra
+Section: admin
+Installed-Size: 1433
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 6.0-2
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.38), libgovirt2 (>= 0.3.4), libgtk-3-0 (>= 3.11.5), libgtk-vnc-2.0-0 (>= 0.4.1), libpango-1.0-0 (>= 1.14.0), librest-0.7-0 (>= 0.8.0), libspice-client-glib-2.0-8 (>= 0.33), libspice-client-gtk-3.0-5 (>= 0.32), libvirt-glib-1.0-0 (>= 0.0.7~), libvirt0 (>= 1.2.8~rc2), libxml2 (>= 2.7.4)
+Suggests: netcat
+Description: Displaying the graphical console of a virtual machine
+ The console is accessed using the VNC or SPICE protocol. The guest can be
+ referred to based on its name, ID, or UUID. If the guest is not already
+ running, then the viewer can be told to wait until is starts before attempting
+ to connect to the console The viewer can connect to remote hosts to lookup the
+ console information and then also connect to the remote console using the same
+ network transport.
+Original-Maintainer: Debian Libvirt Maintainers <pkg-libvirt-maintainers@lists.alioth.debian.org>
+Homepage: http://virt-manager.org
+
+Package: libplexus-classworlds-java
+Status: install ok installed
+Priority: optional
+Section: java
+Installed-Size: 76
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: plexus-classworlds
+Version: 2.5.2-2
+Replaces: libplexus-classworlds2-java (<< 2.5.2-2~)
+Suggests: libplexus-classworlds-java-doc
+Breaks: libplexus-classworlds2-java (<< 2.5.2-2~)
+Description: Class loading utilities for the Plexus framework
+ The Plexus project provides a full software stack for creating and executing
+ software projects. Based on the Plexus container, the applications can
+ utilise component-oriented programming to build modular, reusable components
+ that can easily be assembled and reused.
+ .
+ While Plexus is similar to other inversion-of-control (IoC) or dependency
+ injection frameworks such as the Spring Framework, it is a full-fledged
+ container that supports many more features such as:
+ .
+  * Component lifecycles
+  * Component instantiation strategies
+  * Nested containers
+  * Component configuration
+  * Auto-wiring
+  * Component dependencies, and
+  * Various dependency injection techniques including constructor injection,
+   setter injection, and private field injection.
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Homepage: https://codehaus-plexus.github.io/plexus-classworlds/
+
+Package: git-man
+Status: install ok installed
+Priority: optional
+Section: doc
+Installed-Size: 1591
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: git
+Version: 1:2.17.1-1ubuntu0.8
+Replaces: git (<< 1:1.7.4~rc1), git-core (<< 1:1.7.0.4-1.)
+Breaks: git (<< 1:1.7.4~rc1)
+Description: fast, scalable, distributed revision control system (manual pages)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides reference documentation for use by the 'man'
+ utility and the 'git help' command.
+Homepage: https://git-scm.com/
+Original-Maintainer: Gerrit Pape <pape@smarden.org>
+
+Package: node-ansi-color-table
+Status: install ok installed
+Priority: extra
+Section: web
+Installed-Size: 53
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.0.0-1
+Depends: nodejs, node-ansi
+Description: Color and format tables for ansi output - Node.js module
+ This module outputs borderless tables to stdout or to a writable stream,
+ with ansi colors and formatting support.
+ .
+ Node.js is an event-based server-side javascript engine.
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Homepage: https://github.com/quimcalpe/ansi-color-table
+
+Package: python3-distro-info
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 53
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: distro-info
+Version: 0.18ubuntu0.18.04.1
+Depends: distro-info-data, python3:any (>= 3.3.2-2~)
+Description: information about distributions' releases (Python 3 module)
+ Information about all releases of Debian and Ubuntu.
+ .
+ This package contains a Python 3 module for parsing the data in
+ distro-info-data. There is also a command line interface in the distro-info
+ package.
+Original-Maintainer: Benjamin Drung <bdrung@debian.org>
+
+Package: ufw
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 823
+Maintainer: Jamie Strandboge <jamie@ubuntu.com>
+Architecture: all
+Version: 0.36-0ubuntu0.18.04.1
+Depends: iptables, lsb-base (>= 3.0-6), ucf, python3:any (>= 3.3.2-2~), debconf (>= 0.5) | debconf-2.0
+Suggests: rsyslog
+Conffiles:
+ /etc/default/ufw 9ff8f2998c343cab9f6908cf5b27d708
+ /etc/init.d/ufw 4156943ab8a824fcf4b04cc1362eb230
+ /etc/logrotate.d/ufw 12b1fb7cee76fc46f161e1ead1a22ce6
+ /etc/rsyslog.d/20-ufw.conf 98e2f72c9c65ca8d6299886b524e80d1
+ /etc/ufw/sysctl.conf 7723079fc108eda8f57eddab3079c70a
+Description: program for managing a Netfilter firewall
+ The Uncomplicated FireWall is a front-end for iptables, to make managing a
+ Netfilter firewall easier. It provides a command line interface with syntax
+ similar to OpenBSD's Packet Filter. It is particularly well-suited as a
+ host-based firewall.
+Homepage: https://launchpad.net/ufw
+
+Package: libxcb-dri2-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 42
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libxcb
+Version: 1.13-2~ubuntu18.04
+Depends: libc6 (>= 2.4), libxcb1
+Description: X C Binding, dri2 extension
+ This package contains the library files needed to run software using
+ libxcb-dri2, the dri2 extension for the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Homepage: https://xcb.freedesktop.org
+
+Package: exfat-utils
+Status: install ok installed
+Priority: optional
+Section: otherosfs
+Installed-Size: 199
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.2.8-1
+Depends: libc6 (>= 2.14)
+Recommends: exfat-fuse
+Description: utilities to create, check, label and dump exFAT filesystem
+ Utilities to manage extended file allocation table filesystem.
+ This package provides tools to create, check and label the
+ filesystem. It contains
+  - dumpexfat to dump properties of the filesystem
+  - exfatfsck / fsck.exfat to report errors found on a exFAT filesystem
+  - exfatlabel to label a exFAT filesystem
+  - mkexfatfs / mkfs.exfat to create a exFAT filesystem.
+Original-Maintainer: Sven Hoexter <hoexter@debian.org>
+Homepage: https://github.com/relan/exfat
+
+Package: libsm6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 67
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libsm
+Version: 2:1.2.2-1
+Depends: libc6 (>= 2.14), libice6 (>= 1:1.0.0), libuuid1 (>= 2.16)
+Pre-Depends: multiarch-support
+Description: X11 Session Management library
+ This package provides the main interface to the X11 Session Management
+ library, which allows for applications to both manage sessions, and make use
+ of session managers to save and restore their state for later use.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libSM
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: deja-dup
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 3076
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 37.1-2fakesync1ubuntu0.1
+Depends: dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libglib2.0-0 (>= 2.49.2), libgoa-1.0-0b (>= 3.8.0), libgoa-backend-1.0-1 (>= 3.10.0), libgtk-3-0 (>= 3.22), libnautilus-extension1a (>= 3.21.92-3~), libpackagekit-glib2-18 (>= 1.1.0), libpango-1.0-0 (>= 1.14.0), libpeas-1.0-0 (>= 1.0.0), libsecret-1-0 (>= 0.7)
+Recommends: gvfs-backends, packagekit, policykit-1
+Suggests: python-boto (>= 0.9d), python-cloudfiles, python-swiftclient, duplicity (>= 0.7.14)
+Conffiles:
+ /etc/xdg/autostart/org.gnome.DejaDup.Monitor.desktop 6b43e6f064d4973f3dc6e06a7e1392a0
+Description: Backup utility
+ Déjà Dup is a simple backup tool. It hides the complexity of backing up the
+ Right Way (encrypted, off-site, and regular) and uses duplicity as the
+ backend.
+ .
+ Features:
+  * Support for local, remote, or cloud backup locations such as Nextcloud
+  * Securely encrypts and compresses your data
+  * Incrementally backs up, letting you restore from any particular backup
+  * Schedules regular backups
+  * Integrates well into your GNOME desktop
+Homepage: https://launchpad.net/deja-dup
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libsss-idmap0
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 61
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: sssd
+Version: 1.16.1-1ubuntu1.7
+Depends: libc6 (>= 2.14)
+Description: ID mapping library for SSSD
+ Utility library to convert SIDs to Unix uids and gids.
+Homepage: https://pagure.io/SSSD/sssd/
+Original-Maintainer: Debian SSSD Team <pkg-sssd-devel@lists.alioth.debian.org>
+
+Package: libmms0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 82
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libmms
+Version: 0.6.4-2
+Depends: libc6 (>= 2.15)
+Description: MMS stream protocol library - shared library
+ LibMMS is a common library for parsing mms:// and mmsh:// type network
+ streams.  These are commonly used to stream Windows Media Video content
+ over the web.  LibMMS itself is only for receiving MMS stream, it
+ doesn't handle sending at all.
+ .
+ This package holds the shared library.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Homepage: http://libmms.sourceforge.net/
+
+Package: node-osenv
+Status: install ok installed
+Priority: optional
+Section: javascript
+Installed-Size: 17
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.1.4-1
+Depends: nodejs
+Description: Environment settings lookup module for Node.js
+ node-osenv looks for hostname, user, prompt, tmpdir, home, path,
+ editor, shell in environment variables, utilities like hostname or
+ whoami, with appropriate default values.
+ It supports the same platforms as Node.js does.
+ .
+ Node.js is an event-based server-side javascript engine.
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Homepage: https://github.com/isaacs/osenv
+
+Package: ipxe-qemu-256k-compat-efi-roms
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 1228
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: ipxe-qemu-256k-compat
+Version: 1.0.0+git-20150424.a25a16d-0ubuntu2
+Description: PXE boot firmware - Compat EFI ROM images for qemu
+ iPXE is network boot firmware.  It supports a variety of network cards,
+ including some wireless cards, and variety of network protocols (traditional
+ DHCP, BOOTP and TFTP and also HTTP, iSCSI, SAN via FCoE and Infiniband). It
+ supports scripting.
+ .
+ It is possible to use iPXE as a PXE ROM in the network card or to
+ chainload it from other boot methods.
+ .
+ This package provides compat boot code for the qemu emulated network cards
+ as boot ROMs for the EFI roms of formerly released Ubuntu qemu machine types.
+ Those are only needed for migrations from these older releases.
+Homepage: http://ipxe.org/
+Original-Maintainer: Bastian Blank <waldi@debian.org>
+
+Package: libqt5sensors5
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 561
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: qtsensors-opensource-src
+Version: 5.9.5-0ubuntu1
+Depends: libc6 (>= 2.14), libqt5core5a (>= 5.9.0~beta), libqt5dbus5 (>= 5.0.2), libstdc++6 (>= 5), qtbase-abi-5-9-5
+Description: Qt Sensors module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains Qt Sensors module.
+Homepage: http://qt-project.org/
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+
+Package: cpio
+Status: install ok installed
+Priority: important
+Section: utils
+Installed-Size: 348
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 2.12+dfsg-6ubuntu0.18.04.1
+Replaces: cpio-mt
+Depends: libc6 (>= 2.17)
+Suggests: libarchive1
+Conflicts: cpio-mt, mt-st (<< 0.6)
+Description: GNU cpio -- a program to manage archives of files
+ GNU cpio is a tool for creating and extracting archives, or copying
+ files from one place to another.  It handles a number of cpio formats
+ as well as reading and writing tar files.
+Homepage: http://www.gnu.org/software/cpio/
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+
+Package: libdee-1.0-4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 264
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: dee
+Version: 1.2.7+17.10.20170616-0ubuntu4
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.37.3), libicu60 (>= 60.1-1~)
+Description: model to synchronize multiple instances over DBus - shared lib
+ libdee is a shared library that provides objects that help
+ having multiple instances communicating over DBus.
+ .
+ This package contains shared libraries to be used by applications.
+Homepage: https://launchpad.net/dee
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+
+Package: keyboard-configuration
+Status: install ok installed
+Priority: important
+Section: utils
+Installed-Size: 2558
+Maintainer: Ubuntu Installer Team <ubuntu-installer@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: console-setup
+Version: 1.178ubuntu2.9
+Replaces: console-setup (<< 1.47), console-setup-mini (<< 1.47)
+Depends: liblocale-gettext-perl
+Pre-Depends: debconf (>= 1.5.34)
+Breaks: console-setup (<< 1.71), console-setup-mini (<< 1.47)
+Description: system-wide keyboard preferences
+ This package maintains the keyboard preferences in
+ /etc/default/keyboard.  Other packages can use the information
+ provided by this package in order to configure the keyboard on the
+ console or in X Window.
+Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+
+Package: vagrant-libvirt
+Status: install ok installed
+Priority: optional
+Section: ruby
+Installed-Size: 274
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.0.43-2
+Depends: ruby | ruby-interpreter, ruby-fog-core (>= 1.42), ruby-fog-libvirt (>= 0.3.0), ruby-nokogiri (>= 1.6), vagrant
+Recommends: qemu-utils, nfs-kernel-server, libguestfs-tools
+Description: Vagrant plugin that adds an Libvirt provider to Vagrant
+ vagrant-libvirt allows Vagrant to control and provision machines via
+ Libvirt toolkit.
+ .
+ It has many relevant features:
+  * Control local Libvirt hypervisors.
+  * Upload box image (qcow2 format) to Libvirt storage pool.
+  * Create volume as COW diff image for domains.
+  * Create private networks.
+  * Create and boot Libvirt domains.
+  * SSH into domains.
+  * Setup hostname and network interfaces.
+  * Provision domains with any built-in Vagrant provisioner.
+  * Synced folder support via rsync, nfs or 9p.
+  * Snapshots via sahara.
+  * Package caching via vagrant-cachier.
+  * Use boxes from other Vagrant providers via vagrant-mutate.
+Original-Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Homepage: https://github.com/vagrant-libvirt/vagrant-libvirt
+Ruby-Versions: all
+
+Package: libappstream-glib8
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 375
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: appstream-glib
+Version: 0.7.7-2
+Depends: libarchive13 (>= 3.0.4), libc6 (>= 2.14), libgcab-1.0-0 (>= 0.4), libgdk-pixbuf2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.46), libsoup2.4-1 (>= 2.52), libstemmer0d (>= 0+svn527), libuuid1 (>= 2.16), libyaml-0-2
+Description: GNOME library to access AppStream services
+ AppStream is a cross-distribution effort for creating and sharing
+ metadata about software components available in the package repositories
+ of a distribution.
+ .
+ This package contains a GObject-based library to read and write AppStream
+ XML metadata and retrieve additional data such as screenshots.
+ .
+ As opposed to libappstream, this library does not use an on-disk cache but
+ reads data directly from the XML or DEP-11 YAML files.
+Original-Maintainer: Matthias Klumpp <mak@debian.org>
+Homepage: https://github.com/hughsie/appstream-glib
+
+Package: libpopt0
+Status: install ok installed
+Priority: important
+Section: libs
+Installed-Size: 116
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: popt
+Version: 1.16-11
+Replaces: popt
+Depends: libc6 (>= 2.27)
+Conflicts: libpopt-dev (<= 1.4-1), popt, rpm (<= 4.0.2-3)
+Description: lib for parsing cmdline parameters
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the runtime library and locale data.
+Original-Maintainer: Michael Jeanson <mjeanson@debian.org>
+Homepage: http://rpm5.org/
+
+Package: libsecret-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 44
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: libsecret
+Version: 0.18.6-1
+Description: Secret store (common files)
+ Library for storing and retrieving passwords and other secrets.
+ It communicates with the "Secret Service" using DBus.
+ .
+ This package contains data files used by the libsecret library.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Projects/Libsecret
+
+Package: linux-modules-extra-4.15.0-64-generic
+Status: deinstall ok config-files
+Priority: optional
+Section: kernel
+Installed-Size: 165474
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux
+Version: 4.15.0-64.73
+Config-Version: 4.15.0-64.73
+Depends: linux-image-4.15.0-64-generic | linux-image-unsigned-4.15.0-64-generic, crda | wireless-crda
+Description: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+ This package contains the Linux kernel extra modules for version 4.15.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: ubuntu-wallpapers-bionic
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 36863
+Maintainer: Ubuntu Artwork Team <ubuntu-art@lists.ubuntu.com>
+Architecture: all
+Source: ubuntu-wallpapers
+Version: 18.04.1-0ubuntu1
+Description: Ubuntu 18.04 Wallpapers
+ Wallpapers from the Ubuntu 18.04 community contest and a Canonical-created
+ greyscale wallpaper.
+Homepage: https://launchpad.net/ubuntu-wallpapers
+
+Package: libflac++6v5
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 155
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: flac
+Version: 1.3.2-1
+Replaces: libflac++6
+Depends: libc6 (>= 2.14), libflac8 (>= 1.3.0), libgcc1 (>= 1:3.0), libstdc++6 (>= 5)
+Breaks: libflac++6
+Description: Free Lossless Audio Codec - C++ runtime library
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the runtime library libFLAC++.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Homepage: http://xiph.org/flac/
+
+Package: libruby2.5
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 13722
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: ruby2.5
+Version: 2.5.1-1ubuntu1.8
+Depends: rake (>= 10.4.2), ruby-did-you-mean (>= 1.0), ruby-minitest (>= 5.4), ruby-net-telnet (>= 0.1.1), ruby-test-unit (>= 3.0.8~), libc6 (>= 2.25), libffi6 (>= 3.0.4), libgdbm-compat4, libgdbm5 (>= 1.14), libgmp10, libreadline7 (>= 6.0), libssl1.1 (>= 1.1.1), libyaml-0-2, zlib1g (>= 1:1.2.2)
+Description: Libraries necessary to run Ruby 2.5
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
+ .
+ This package includes the 'libruby-2.5' library, necessary to run Ruby 2.5.
+ (API version 2.5.0)
+Homepage: http://www.ruby-lang.org/
+Original-Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+
+Package: libwbclient0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 204
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: samba
+Version: 2:4.7.6+dfsg~ubuntu-0ubuntu2.21
+Depends: libbsd0 (>= 0.0), libc6 (>= 2.14)
+Pre-Depends: dpkg (>= 1.15.6~)
+Description: Samba winbind client library
+ Samba is an implementation of the SMB/CIFS protocol for Unix systems,
+ providing support for cross-platform file and printer sharing with
+ Microsoft Windows, OS X, and other Unix systems.
+ .
+ This package provides a library for client applications that interact
+ via the winbind pipe protocol with a Samba winbind server.
+Homepage: http://www.samba.org
+Original-Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+
+Package: linux-image-4.15.0-122-generic
+Status: deinstall ok config-files
+Priority: optional
+Section: kernel
+Installed-Size: 8218
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-signed
+Version: 4.15.0-122.124
+Config-Version: 4.15.0-122.124
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-122-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.15.0 | linux-source-4.15.0, linux-tools, linux-headers-4.15.0-122-generic
+Conflicts: linux-image-unsigned-4.15.0-122-generic
+Description: Signed kernel image generic
+ A kernel image for generic.  This version of it is signed with
+ Canonical's UEFI/Opal signing key.
+Built-Using: linux (= 4.15.0-122.124)
+
+Package: libcolord2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 380
+Maintainer: Christopher James Halse Rogers <raof@ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: colord
+Version: 1.3.3-2build1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), liblcms2-2 (>= 2.6), libudev1 (>= 196)
+Suggests: colord
+Description: system service to manage device colour profiles -- runtime
+ colord is a system service that makes it easy to manage, install and generate
+ colour profiles to accurately colour manage input and output devices.
+ .
+ It provides a D-Bus API for system frameworks to query, a persistent data
+ store, and a mechanism for session applications to set system policy.
+ .
+ This package contains a gobject-based convenience library for programs to
+ interact with the colord system daemon.
+Homepage: http://www.freedesktop.org/software/colord/
+
+Package: libthai-data
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 578
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: libthai
+Version: 0.1.27-2
+Breaks: libthai0 (<< 0.1.10)
+Description: Data files for Thai language support library
+ LibThai is a set of Thai language support routines aimed to ease
+ developers' tasks to incorporate Thai language support in their applications.
+ It includes important Thai-specific functions e.g. word breaking, input and
+ output methods as well as basic character and string supports.
+ .
+ This package contains data files needed by the LibThai library.
+Original-Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
+Homepage: https://linux.thai.net/projects/libthai
+
+Package: google-chrome-stable
+Status: install ok installed
+Priority: optional
+Section: web
+Installed-Size: 239158
+Maintainer: Chrome Linux Team <chromium-dev@chromium.org>
+Architecture: amd64
+Version: 90.0.4430.72-1
+Provides: www-browser
+Depends: ca-certificates, fonts-liberation, libasound2 (>= 1.0.16), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.2.0), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.17), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.5.12), libdrm2 (>= 2.4.38), libexpat1 (>= 2.0.1), libgbm1 (>= 8.1~0), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.9.10), libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.22), libpango-1.0-0 (>= 1.14.0), libx11-6 (>= 2:1.4.99.1), libxcb1 (>= 1.9.2), libxcomposite1 (>= 1:0.4.4-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxkbcommon0 (>= 0.4.1), libxrandr2, libxshmfence1, wget, xdg-utils (>= 1.0.2)
+Pre-Depends: dpkg (>= 1.14.0)
+Recommends: libu2f-udev, libvulkan1
+Description: The web browser from Google
+ Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
+
+Package: linux-image-4.15.0-117-generic
+Status: deinstall ok config-files
+Priority: optional
+Section: kernel
+Installed-Size: 8222
+Maintainer: Canonical Kernel Team <kernel-team@lists.ubuntu.com>
+Architecture: amd64
+Source: linux-signed
+Version: 4.15.0-117.118
+Config-Version: 4.15.0-117.118
+Provides: aufs-dkms, fuse-module, ivtv-modules, kvm-api-4, linux-image, redhat-cluster-modules, spl-dkms, spl-modules, virtualbox-guest-modules, zfs-dkms, zfs-modules
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-4.15.0-117-generic
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo, initramfs-tools | linux-initramfs-tool
+Suggests: fdutils, linux-doc-4.15.0 | linux-source-4.15.0, linux-tools, linux-headers-4.15.0-117-generic
+Conflicts: linux-image-unsigned-4.15.0-117-generic
+Description: Signed kernel image generic
+ A kernel image for generic.  This version of it is signed with
+ Canonical's UEFI/Opal signing key.
+Built-Using: linux (= 4.15.0-117.118)
+
+Package: findutils
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: utils
+Installed-Size: 580
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 4.6.0+git+20170828-2
+Pre-Depends: libc6 (>= 2.17), libselinux1 (>= 1.32)
+Suggests: mlocate | locate
+Breaks: binstats (<< 1.08-8.1), guilt (<< 0.36-0.2), libpython3.4-minimal (<< 3.4.4-2), libpython3.5-minimal (<< 3.5.1-3), lsat (<< 0.9.7.1-2.1), mc (<< 3:4.8.11-1), switchconf (<< 0.0.9-2.1)
+Description: utilities for finding files--find, xargs
+ GNU findutils provides utilities to find files meeting specified
+ criteria and perform various actions on the files which are found.
+ This package contains 'find' and 'xargs'; however, 'locate' has
+ been split off into a separate package.
+Original-Maintainer: Andreas Metzler <ametzler@debian.org>
+Homepage: https://savannah.gnu.org/projects/findutils/
+
+Package: gnome-todo-common
+Status: install ok installed
+Priority: optional
+Section: gnome
+Installed-Size: 284
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: gnome-todo
+Version: 3.28.1-1
+Replaces: gnome-todo (<< 3.26.2-2~)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: gnome-todo (<< 3.26.2-2~)
+Description: common files for GNOME To Do
+ Library that provides GObject-based interface of GNOME To Do, simplistic
+ personal task manager designed to perfectly fit the GNOME desktop.
+ .
+ This package contains common files.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Apps/Todo
+
+Package: brltty
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 7280
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 5.5-4ubuntu2.0.1
+Replaces: libbrlapi1 (<< 3.7.2-7.1)
+Depends: libbluetooth3 (>= 4.91), libbrlapi0.6, libc6 (>= 2.27), libdbus-1-3 (>= 1.9.14), libglib2.0-0 (>= 2.16.0), libgpm2 (>= 1.20.7), libicu60 (>= 60.1-1~), libncursesw5 (>= 6), libpolkit-gobject-1-0 (>= 0.101), libsystemd0, libtinfo5 (>= 6), lsb-base (>= 3.2-14), policykit-1, initramfs-tools (>= 0.40ubuntu30)
+Recommends: python3
+Suggests: brltty-speechd, brltty-x11, console-braille
+Conffiles:
+ /etc/brltty.conf 468b32c7b938c67ee5ce003201e8a5d3
+ /etc/brltty/Attributes/invleft_right.atb f8521b9e1a0ed6f3d7c4dc899b2292d0
+ /etc/brltty/Attributes/left_right.atb c22476ea5144c3be49eda835c8858aa1
+ /etc/brltty/Attributes/upper_lower.atb faa121a196dd6d0112005774cb650ab5
+ /etc/brltty/Contraction/af.ctb a948c45adfca4fc6228c7eb2363f8868
+ /etc/brltty/Contraction/am.ctb a00493452f133489ad6c29367104fa7b
+ /etc/brltty/Contraction/countries.cti dc8e363cdaff36523b80b22cc09a6fcd
+ /etc/brltty/Contraction/de-basis.ctb 1919b3365aa2662e8b6fd88c9c1b273a
+ /etc/brltty/Contraction/de-kurzschrift.ctb 3a08e9bcfff580d39c2641171774b1f9
+ /etc/brltty/Contraction/de-vollschrift.ctb 743b9df52e51bc019021c070759fead3
+ /etc/brltty/Contraction/en-ueb-g2.ctb e6ad19bbe9e712536424f6f552b39fb1
+ /etc/brltty/Contraction/en-us-g2.ctb d523e98f99af7dd84a21a5052eed0350
+ /etc/brltty/Contraction/es.ctb 964864270a07707b204fec2862c8ba96
+ /etc/brltty/Contraction/fr-abrege.ctb b316b2b695683d38d2beb6ab10c6bf2e
+ /etc/brltty/Contraction/fr-integral.ctb d617d2198fd01b0c8f1da3acd5ea9a90
+ /etc/brltty/Contraction/ha.ctb 3141df2605c218c76a7efcc3ea799033
+ /etc/brltty/Contraction/id.ctb 51e0e2fed7ac2bc4fcb795316e15bcb9
+ /etc/brltty/Contraction/ipa.ctb 6af1be46e7764021641f48e76ac2000e
+ /etc/brltty/Contraction/ja.ctb 847822902c513d8bbbbda0ae5d3d3690
+ /etc/brltty/Contraction/ko-g1.ctb f3b4991603545e34752bd7317b9312c5
+ /etc/brltty/Contraction/ko-g2.ctb f1689cbc8914030cf148d77e369e0949
+ /etc/brltty/Contraction/ko.ctb d3466ab52998f6afeebdebf89ed20ea8
+ /etc/brltty/Contraction/latex-access.ctb abd7ec2c7b5be71165549fc9701ac7d0
+ /etc/brltty/Contraction/letters-latin.cti aaffa0d891c933ab2bd2d00fae475255
+ /etc/brltty/Contraction/mg.ctb 1c42793ee5bcdaa8351b720f740462c5
+ /etc/brltty/Contraction/mun.ctb ec6eec164a2977d30a34ee95213011ea
+ /etc/brltty/Contraction/nabcc.cti 2aa11663854c902df14a04fd018ec0f7
+ /etc/brltty/Contraction/nl.ctb b461901e66f26248829a343d39caaaca
+ /etc/brltty/Contraction/ny.ctb b7dc22bacce9db048f5f1272b2d84f77
+ /etc/brltty/Contraction/pt.ctb 4f1a2fea3b372f89308ec8143692bb3b
+ /etc/brltty/Contraction/si.ctb f28747f9601cb9a692bbd052135a6a63
+ /etc/brltty/Contraction/sw.ctb 0c2e9f5353215bbc208a1ab35ba8f0cc
+ /etc/brltty/Contraction/th.ctb 8639cfb84ae2b24ff45e3257c7ca1444
+ /etc/brltty/Contraction/zh-tw-ucb.ctb 70ee4c633397b1fa39ae48ea71df8e5b
+ /etc/brltty/Contraction/zh-tw.ctb 971817f48417b6e7c6148f357061d410
+ /etc/brltty/Contraction/zu.ctb b756e800f2bec6df2d2624a1f8c87849
+ /etc/brltty/Input/al/abt_basic.kti 9230e9282a442c8f257bb58498c873cc
+ /etc/brltty/Input/al/abt_extra.kti 219cb827d5e5b617b9a38b8198d726a0
+ /etc/brltty/Input/al/abt_large.ktb 4f8207ad0f76b0d0357cee0a381044b3
+ /etc/brltty/Input/al/abt_small.ktb f971362137efe28d5f7cb2816cb92b44
+ /etc/brltty/Input/al/bc-etouch.kti aa5bd2e88adca27cb8087133a6b9526a
+ /etc/brltty/Input/al/bc-smartpad.kti 32e945c360502fa22a0fc26311063876
+ /etc/brltty/Input/al/bc-thumb.kti d122882ebd38f4caf1d2c0bf1df5c86f
+ /etc/brltty/Input/al/bc.kti ff96743e1935238b624749af6973136d
+ /etc/brltty/Input/al/bc640.ktb 8bbc91815de59a46537def800e3d1b48
+ /etc/brltty/Input/al/bc680.ktb c2afd40a37572fa703f12c92b463d50c
+ /etc/brltty/Input/al/el.ktb 45bf79adca64d3c02d64cb316e2b6f52
+ /etc/brltty/Input/al/sat_basic.kti 457bb071d45dd6102046fd782d080824
+ /etc/brltty/Input/al/sat_extra.kti 7b06524cfd997dc394e429af7e59938f
+ /etc/brltty/Input/al/sat_large.ktb 291e247204566b52696949dac5f76223
+ /etc/brltty/Input/al/sat_small.ktb 789d4b73cd94f04a8da294ef3c8fc393
+ /etc/brltty/Input/al/voyager.ktb 505a48ecc14a5d5079a3e6ca56117084
+ /etc/brltty/Input/at/all.ktb fd62ae5fd56f1a7ecd01d7020db24357
+ /etc/brltty/Input/ba/all.txt dba5ceb757d7a4118775f3c1b56d6e13
+ /etc/brltty/Input/bd/all.txt e074a6e5d7c8a990b0c553bdedc85d88
+ /etc/brltty/Input/bg/all.ktb cce2e39e464f56509d1a367e1617b4a4
+ /etc/brltty/Input/bl/18.txt e5f939d8e49888d2ac8673e14b118e91
+ /etc/brltty/Input/bl/40_m20_m40.txt 754440c01c84f579cd3a5471206661d3
+ /etc/brltty/Input/bm/b9b10.kti 362105b8fa84cab72753cc3337a0719c
+ /etc/brltty/Input/bm/b9b11b10.kti 8bad1fcd7d1059c7b448778e01740cc3
+ /etc/brltty/Input/bm/command.kti 93e9f32c8e0e84252045116ac42278df
+ /etc/brltty/Input/bm/connect.ktb 21f5c8d711ebd623de0318db5639daab
+ /etc/brltty/Input/bm/conny.ktb f0ec1f1e26cff00a03bc80a6e44cb47e
+ /etc/brltty/Input/bm/d6.kti 03ea1b9a0ec25c3c663e50ab61eb4753
+ /etc/brltty/Input/bm/default.ktb bfb2eb354b37461a24bf4a4a31a0c1a6
+ /etc/brltty/Input/bm/display6.kti b98bcd8444b402cb9c14dbb63342cb33
+ /etc/brltty/Input/bm/display7.kti e1f965e267989ca11356f4b25320ab87
+ /etc/brltty/Input/bm/dm80p.ktb 44ee8ddd805479fba1e99a4f56304aef
+ /etc/brltty/Input/bm/front10.kti 6dc3c67191eb4646042a444a5027ca2f
+ /etc/brltty/Input/bm/front6.kti 2b62bb40c5538d4697a9a29d28196277
+ /etc/brltty/Input/bm/horizontal.kti bd39851dfed31cb53fad47a9e85376ab
+ /etc/brltty/Input/bm/inka.ktb 5708aa6d36f4f911698ac9d7f8b5a365
+ /etc/brltty/Input/bm/keyboard.kti 6307f2175c96ffa1f30f37f228740b17
+ /etc/brltty/Input/bm/orbit.ktb 391a4556ac701f0d31f1530838daf1c1
+ /etc/brltty/Input/bm/pro.ktb b43fa16381bccc5b859b54a222f44910
+ /etc/brltty/Input/bm/pronto.ktb 53395c63d5b42a1c7617474a6c8a0384
+ /etc/brltty/Input/bm/pv.ktb 6f769d8e875c204f8a789afc18199a2a
+ /etc/brltty/Input/bm/rb.ktb dd7333bcd59d0b7df46cb5b881b507db
+ /etc/brltty/Input/bm/routing6.kti f8c8c0d10aaaaaec68f0fd4b35245b90
+ /etc/brltty/Input/bm/routing7.kti abc3010b399e8aba4239e9f76fe79f47
+ /etc/brltty/Input/bm/status.kti 9b3acad3359981adc4b99c0c7ee4e04f
+ /etc/brltty/Input/bm/sv.ktb 9dc723a01f79a84e4a0bc18043a8fb6e
+ /etc/brltty/Input/bm/ultra.ktb aa0417aba26bbf9962d212e7e02f3d97
+ /etc/brltty/Input/bm/v40.ktb 060c9496ab1b7c8900567fb709da94d3
+ /etc/brltty/Input/bm/v80.ktb 3c79915916b41bbd7906b05558bc3d4f
+ /etc/brltty/Input/bm/vertical.kti cf8777894e0099aa6f011d199b904254
+ /etc/brltty/Input/bm/vk.ktb d7bc6f4599585438eb50b1261bf7089b
+ /etc/brltty/Input/bm/wheels.kti 20288f15cf23370481d1b8bb8a4ee8dc
+ /etc/brltty/Input/bn/all.ktb 6a2409a8a067a545284d42011ab5a23c
+ /etc/brltty/Input/bn/input.kti 0e11bd169f75b5128c0c8acb187a1cfc
+ /etc/brltty/Input/bp/all.kti 4d1ba2f0ce4130399692322f36b74cee
+ /etc/brltty/Input/cb/all.ktb bacd8e8ae4e7d0eca53703a7e6c35f62
+ /etc/brltty/Input/ce/all.ktb cb1ef3fdffc7f20c034ce770d3b04c09
+ /etc/brltty/Input/ce/novem.ktb bf9ce79f2ae4a978fdd5c3e6c4f81b0d
+ /etc/brltty/Input/chords.kti bacfffb57a689f5b058422403c50825e
+ /etc/brltty/Input/ec/all.txt 557da62b605e5df3449bdda50916ee7c
+ /etc/brltty/Input/ec/spanish.txt b1b0fe80e08df375bd582d0b465c07d3
+ /etc/brltty/Input/eu/all.txt d0d28bc973a96a5294ca7b7411d6adc4
+ /etc/brltty/Input/eu/braille.kti 6b224cfbb82d69471450ceaccfeb6fa4
+ /etc/brltty/Input/eu/clio.ktb b83c6e03d8488cb706076d4dfb144c7e
+ /etc/brltty/Input/eu/common.kti 84feb56cbc2ca947e59f56a03e9879ff
+ /etc/brltty/Input/eu/esys_large.ktb 56cfa48605666e86d4ca24d0b6535d16
+ /etc/brltty/Input/eu/esys_medium.ktb b04470096bf743ab8f7a08fb4344f0a3
+ /etc/brltty/Input/eu/esys_small.ktb e9d826375ccf3b70a06777f3b6388b2e
+ /etc/brltty/Input/eu/esytime.ktb 8eabcdecbac3fe4ea974ba1bb37f46e0
+ /etc/brltty/Input/eu/iris.ktb bd1a8b5f822313fc045a31477abbfce2
+ /etc/brltty/Input/eu/joysticks.kti 4147a979aa8c5a9ba694557c1ac87b9f
+ /etc/brltty/Input/eu/routing.kti 0529aeeee0acd3998cef4617c06ecbc8
+ /etc/brltty/Input/eu/sw12.kti b68a6ebacfe8b3b173ef4965de3d225b
+ /etc/brltty/Input/eu/sw34.kti 142775c29a1fa8d78e595457d0b92b4c
+ /etc/brltty/Input/eu/sw56.kti a12c8f6c377f7aa5528d988accd09d4a
+ /etc/brltty/Input/fs/bumpers.kti c10df43d818eaba0cfa6a5576f179aa4
+ /etc/brltty/Input/fs/common.kti e4a86f4b5324ee2fc56d7978c94ead78
+ /etc/brltty/Input/fs/focus_basic.ktb d5a0b5c5549dd57c0d813172232c218f
+ /etc/brltty/Input/fs/focus_basic.kti b2b0bba1e963fa7cf9f07c7f98ffbbf4
+ /etc/brltty/Input/fs/focus_large.ktb 37e584e50e7567b183e1231dd5dd2923
+ /etc/brltty/Input/fs/focus_small.ktb 12a672d2585264865beb313da054385b
+ /etc/brltty/Input/fs/pacmate.ktb 874ed8eab261bcfecc7c035d29ee547d
+ /etc/brltty/Input/fs/rockers.kti 79bf5b7f323bd75636da1f59aec715bb
+ /etc/brltty/Input/hd/mbl.ktb 6176076a3445269067b7e77073a5f7b7
+ /etc/brltty/Input/hd/pfl.ktb 22773c2c425924b215caeddc955eb280
+ /etc/brltty/Input/hm/beetle.ktb 21b9b7aeccdb4d358392c1eda1567724
+ /etc/brltty/Input/hm/braille.kti ed195c067ceaec44c22a8441d93471af
+ /etc/brltty/Input/hm/common.kti a4aac3f4539f9cdf22f32f05a019beea
+ /etc/brltty/Input/hm/contexts.kti 7aae51dc8163edbd6c98b7c8ef9dbe63
+ /etc/brltty/Input/hm/edge.ktb 79324403435cbb5fdec9bd6deaade053
+ /etc/brltty/Input/hm/f14.kti 29a87d5ed0786872c483dd349bc100c0
+ /etc/brltty/Input/hm/f18.kti 3d79c17114a6c21af6672b8e7fd4d392
+ /etc/brltty/Input/hm/fnkey.kti f255e47c005b729b719e27c7b5261140
+ /etc/brltty/Input/hm/left.kti 12f98d635d0849942ad5a7b8de92641d
+ /etc/brltty/Input/hm/letters.kti 185552802c2f8d21e205f805942369f0
+ /etc/brltty/Input/hm/pan.ktb 76da8f13e0608532e218f6504525bb94
+ /etc/brltty/Input/hm/pan.kti d6969f1acd193e157e625030eea9acf9
+ /etc/brltty/Input/hm/qwerty.ktb 176717936d7ea1f67d08f4a9943bae75
+ /etc/brltty/Input/hm/qwerty.kti 06ac0c82286d0bf7ad2fe490e31d4885
+ /etc/brltty/Input/hm/right.kti 7691b1909d62bc5c6fd8c03491facaa6
+ /etc/brltty/Input/hm/scroll.ktb 4537b3ab61a8857632983c23edc8468c
+ /etc/brltty/Input/hm/scroll.kti 400799c8ce82d11d551c42f3c81d86ee
+ /etc/brltty/Input/hm/sync.ktb 761bb86b5684f91d3142db98d972dd9e
+ /etc/brltty/Input/ht/ab40.ktb 1dd43be4572e1f60914579621a8eaef9
+ /etc/brltty/Input/ht/alo.ktb 55ce2e210c9ffd61f2ec8a6e99e79924
+ /etc/brltty/Input/ht/as40.ktb bc1191a47d6e1645c95409add34bae40
+ /etc/brltty/Input/ht/bb.ktb d56e8e657898cdcb3a5a2d832042c266
+ /etc/brltty/Input/ht/bkwm.ktb 4d6f64b8b32298e4528e862cbdcc4808
+ /etc/brltty/Input/ht/brln.ktb ef07fb8dea571f93b617533869c5d49e
+ /etc/brltty/Input/ht/bs.kti 5237cea9eef22252f9c35db229032a09
+ /etc/brltty/Input/ht/bs40.ktb 310e45675359b7e5149a69794739dc46
+ /etc/brltty/Input/ht/bs80.ktb 1908559d4460d7ec6c7ef9f1db9f9369
+ /etc/brltty/Input/ht/cb40.ktb 1fcec506302e3c9393bfac7c977b146b
+ /etc/brltty/Input/ht/dots.kti 07764c639ff90e78d371e87d999d7f05
+ /etc/brltty/Input/ht/easy.ktb 982fb3c62f5eb8328a333316a7f75354
+ /etc/brltty/Input/ht/input.kti d7415369f4e4212e1aa9f052baaef4b0
+ /etc/brltty/Input/ht/joystick.kti 3a345316b9c923eef50c1df02a67c4bd
+ /etc/brltty/Input/ht/keypad.kti 0ebe76bf0570d01d3d86aba78a9fc3b4
+ /etc/brltty/Input/ht/mc88.ktb 7ecc7ad1add02ca70e088894ea659ca4
+ /etc/brltty/Input/ht/mdlr.ktb 512193209cfdbd223ede58b79d5af69d
+ /etc/brltty/Input/ht/me.kti dbb94340dcb3628722a2ab59e4ec575c
+ /etc/brltty/Input/ht/me64.ktb 69daae735821f082586b7f3de969beb1
+ /etc/brltty/Input/ht/me88.ktb 14871e844bd801346180d223b82e5ad3
+ /etc/brltty/Input/ht/rockers.kti 2df5b588a0a590e67684b8ea97e6570c
+ /etc/brltty/Input/ht/wave.ktb 083927ef003a9eeb6067fef83d1546f3
+ /etc/brltty/Input/hw/kbd.kti 470ee47ccaef433a72fe1e47eb39cd9b
+ /etc/brltty/Input/hw/mb1.ktb ee72abb239ed0ab50ca9b88dc899dd87
+ /etc/brltty/Input/hw/mb2.ktb a957b9bb9022c5ff9cc1a79837b78b84
+ /etc/brltty/Input/hw/nav.kti b63c400665730978b0bfb221e9cc4dba
+ /etc/brltty/Input/ir/all.kti 6238fb45d3fcd6a608cf5a0ab9f04d76
+ /etc/brltty/Input/ir/brl.ktb 3525b887fef60260532f38d088bf4c70
+ /etc/brltty/Input/ir/pc.ktb 5d7c0917ee104245a84ff0c34569f428
+ /etc/brltty/Input/lb/all.txt bcbf6afd0accc850b10ae4e0192ce4b2
+ /etc/brltty/Input/lt/all.txt 99906cfe61aca9945ea0b92d888478f4
+ /etc/brltty/Input/mb/all.txt 772a3004115fe56f26bd6f0c7fd5213a
+ /etc/brltty/Input/md/common.kti f94283a4bc0ccf07603fb7207e9b4fc1
+ /etc/brltty/Input/md/default.ktb 647f74ba77acadf95a622f01a8f20cfd
+ /etc/brltty/Input/md/fk.ktb 147ed935a0d210299b559bcd2ae958e9
+ /etc/brltty/Input/md/fk_s.ktb 1b584ea0f96589a85e1b1255d755131f
+ /etc/brltty/Input/md/fkeys.kti ecdf5330c0d15c59c67da674cd16b0c0
+ /etc/brltty/Input/md/kbd.ktb 3a4c9995a2fa4cc4b3febaff58bffe0e
+ /etc/brltty/Input/md/keyboard.kti 75750440afe57578917bf7d047f8e4d1
+ /etc/brltty/Input/md/status.kti 5cf30720f926532b2abff81b519ddd15
+ /etc/brltty/Input/menu.kti 5171c109c6b48083182fce181d23b978
+ /etc/brltty/Input/mm/common.kti 55fe92e50a7a710f26fdd12a62ad215f
+ /etc/brltty/Input/mm/pocket.ktb 2df86b25cdc8932b467ccf3ab7a343d5
+ /etc/brltty/Input/mm/smart.ktb 2208d51e7323af8813869afeb41e50ab
+ /etc/brltty/Input/mn/all.txt d03d10247abdb76d5cfb3295dc17d314
+ /etc/brltty/Input/mt/bd1_3.ktb d289d24ca84ba341bc977e5983767a38
+ /etc/brltty/Input/mt/bd1_3.kti 61703cf3a5a999726f9502f21a3663f5
+ /etc/brltty/Input/mt/bd1_3s.ktb 113c1484fa5dadecf192fd806f6542f5
+ /etc/brltty/Input/mt/bd1_6.ktb e26d25f56e75dc167813ce4bde780492
+ /etc/brltty/Input/mt/bd1_6.kti f368b4356f8898907a9cf897d95c5c1e
+ /etc/brltty/Input/mt/bd1_6s.ktb 99f8e33b6da943fe9f0ff92199547f97
+ /etc/brltty/Input/mt/bd2.ktb ceae8d9a734f05d5932da434b246aa80
+ /etc/brltty/Input/mt/status.kti 1df52b4ddbac70e47e8918f495c95cbd
+ /etc/brltty/Input/np/all.ktb 8b30d4ac81650fc17299e6038d9546e7
+ /etc/brltty/Input/pg/all.ktb d674d4c02e32db39d4274b4a11515005
+ /etc/brltty/Input/pm/2d_l.ktb 8adc948eb64002add7e69b3ea9786cca
+ /etc/brltty/Input/pm/2d_s.ktb fae02398e8983ee36d96c373ed440893
+ /etc/brltty/Input/pm/bar.kti 51e8604e3b105833ec89150b294a7b12
+ /etc/brltty/Input/pm/c.ktb 5ccfea80a0667284195cef3834e3b9d3
+ /etc/brltty/Input/pm/c_486.ktb 205cfd40f74df1373a2f153c17218d66
+ /etc/brltty/Input/pm/el2d_80s.ktb 9d03a9ff015cd894eb3ebda284c4930e
+ /etc/brltty/Input/pm/el40c.ktb 055ca6a021255ede801268e0a0a00d6c
+ /etc/brltty/Input/pm/el40s.ktb bfb88245c32e3610821389dd2a9a4e93
+ /etc/brltty/Input/pm/el60c.ktb 6e59174dddfff0ffedad18cd505ba933
+ /etc/brltty/Input/pm/el66s.ktb f7e63a685b24fb060119e9f4070afeaa
+ /etc/brltty/Input/pm/el70s.ktb 1ae275ed8df7e3d6ec4e1256404b06b5
+ /etc/brltty/Input/pm/el80_ii.ktb 50a9bcc7ee8c1e8cd6e9f4ef3c9bd500
+ /etc/brltty/Input/pm/el80c.ktb d71e78a06c28e2357b6ef7fd42be4f1e
+ /etc/brltty/Input/pm/el80s.ktb 70123a560b08cd5fb5bf6bbdd38031ee
+ /etc/brltty/Input/pm/el_2d_40.ktb cf4f2864e2fdb5bcc9e17c2998289846
+ /etc/brltty/Input/pm/el_2d_66.ktb a09ddd88f910359a952251c29b5a5ff4
+ /etc/brltty/Input/pm/el_2d_80.ktb 69ccd66727bc994c316d2c2877ca852b
+ /etc/brltty/Input/pm/el_40_p.ktb bec1fc66964672629b96eb2374d90fc5
+ /etc/brltty/Input/pm/el_80.ktb 524d715979c28a49cfc02c00930f9bd4
+ /etc/brltty/Input/pm/elb_tr_20.ktb eff4ca2a3f5fe27e8b661d2dc41dd13c
+ /etc/brltty/Input/pm/elb_tr_32.ktb ec73b2f15de1a489ac6ec22d7eb87eeb
+ /etc/brltty/Input/pm/elba_20.ktb b2c8437f49792cf6674ff5733011f1e1
+ /etc/brltty/Input/pm/elba_32.ktb 14dd3c6ad924be81edcb146f8712b21a
+ /etc/brltty/Input/pm/front13.kti 19ae81214ace5a7291f38c8bc1739cbc
+ /etc/brltty/Input/pm/front9.kti ce9138c067c0a4f02dae5c8f84e973ab
+ /etc/brltty/Input/pm/ib_80.ktb cef7c540b7cacc0cab053c7a786dbd64
+ /etc/brltty/Input/pm/keyboard.kti 513c499c8c2f05cc9ec94395d044f15d
+ /etc/brltty/Input/pm/keys.kti 9535d115a322205fbb5125eeb4d665fa
+ /etc/brltty/Input/pm/live.ktb 23a267434054f72f8f7419cf2191cbb2
+ /etc/brltty/Input/pm/routing.kti 67a811ca55d646f06d0f6de429d04692
+ /etc/brltty/Input/pm/status0.kti 8c8d173e4ad621260898c637c30e44da
+ /etc/brltty/Input/pm/status13.kti ef1a3c50957f074173984c661e6f06df
+ /etc/brltty/Input/pm/status2.kti c1e21251dd3bcb932bdebd5a589dc9c0
+ /etc/brltty/Input/pm/status20.kti 58346f578a43e87044d32bc9dd1eaa9d
+ /etc/brltty/Input/pm/status22.kti e06ea85085cacef8f7dabbb8e93bcea0
+ /etc/brltty/Input/pm/status4.kti fcc5c4d15b14d21bccda72b83b4b88d4
+ /etc/brltty/Input/pm/switches.kti fa9e0b78dc25ecb126c901afc34b4373
+ /etc/brltty/Input/pm/trio.ktb b36881c543af8f24b97485e49a40ca0c
+ /etc/brltty/Input/sk/bdp.ktb 9fe697e22d90ed899d6316f7e7fbded3
+ /etc/brltty/Input/sk/ntk.ktb a89e791b9fa3d22fd33ec2684dd9267b
+ /etc/brltty/Input/tn/all.txt 23c0fc87f0a12a893346003cb7b3af10
+ /etc/brltty/Input/toggle.kti aad1f33714d7bfffbf6a99549152f491
+ /etc/brltty/Input/ts/nav.kti 0b937024fdc5445a22240c8d7f28b538
+ /etc/brltty/Input/ts/nav20.ktb a66c10ac9c3a8e4a635861f3e05022b8
+ /etc/brltty/Input/ts/nav40.ktb 924ff210d3ac5ae6c97d7109d7378554
+ /etc/brltty/Input/ts/nav80.ktb c59513d70bd3ce06900385d5acb1ed8b
+ /etc/brltty/Input/ts/nav_large.kti d13700aba90d91f42450ab1cc1bb0f5f
+ /etc/brltty/Input/ts/nav_small.kti 733b515de832f0f90a31388a80d1edff
+ /etc/brltty/Input/ts/pb.kti 4a19606755d078a5bb7c7d1477d01945
+ /etc/brltty/Input/ts/pb40.ktb 44940c8a436595bd86e0d06bd03f45ed
+ /etc/brltty/Input/ts/pb65.ktb 3141e1fa37d3a4aeca8b02e7275da6b1
+ /etc/brltty/Input/ts/pb80.ktb 6f049132b2ef72b9b27f9a056610e7d6
+ /etc/brltty/Input/ts/pb_large.kti 04d9b17bcabc5703cd500b8ce8215ee7
+ /etc/brltty/Input/ts/pb_small.kti ae8c1858aafd8d9a6b36f9d41a0cdc39
+ /etc/brltty/Input/ts/routing.kti 3dd073062d2d6ba46e1067299316661b
+ /etc/brltty/Input/tt/all.txt 5e400435befcd7065b54dc3a44828144
+ /etc/brltty/Input/vd/all.txt 97f903d0978b084db8263547032842d2
+ /etc/brltty/Input/vo/all.ktb fc3ea7ade6cf4849b9c64504b3ec4f37
+ /etc/brltty/Input/vo/all.kti 9b82575e9295fdfc314b030a249244d5
+ /etc/brltty/Input/vo/bp.ktb 26e45a6f297c6651ce8f9ff15d861925
+ /etc/brltty/Input/vr/all.txt 59085d7eb62b63059e94574177580c0b
+ /etc/brltty/Input/vs/all.txt afbb69e3847180cf3a8a07eca591cdc8
+ /etc/brltty/Keyboard/braille.ktb 2e0fee0ad58652391c536f1adf12a60e
+ /etc/brltty/Keyboard/braille.kti 0084e5b3021ce1f8f9732a7809b01244
+ /etc/brltty/Keyboard/desktop.ktb d8fbcc375ad9ddbc60340c766dedaef8
+ /etc/brltty/Keyboard/desktop.kti a9f19e65c0c717acb80a39a48538fb9f
+ /etc/brltty/Keyboard/keypad.ktb 7940a9440d84d79d2757f70cd03b6592
+ /etc/brltty/Keyboard/kp_say.kti d8caa6add5280e0138955e88995eb2f6
+ /etc/brltty/Keyboard/kp_speak.kti 4c13cab9ffde8363e3de817e06e27731
+ /etc/brltty/Keyboard/laptop.ktb 36915495a0cc313f595a3fe8f1481388
+ /etc/brltty/Keyboard/sun_type6.ktb 5d44eafaab895e3335ba0c75fac3f679
+ /etc/brltty/Text/ar.ttb b2db0dc6cc65f56fc5b98202128889a9
+ /etc/brltty/Text/as.ttb 8f9d1beb94b5b3ca7ce397e6b8a1520f
+ /etc/brltty/Text/ascii-basic.tti cd0484e9d9fedcbfae5188ba55e002d5
+ /etc/brltty/Text/awa.ttb 23f6c3c5f09b8a45f363208791715ee7
+ /etc/brltty/Text/bengali.tti b8e38d44494003c0c87d8fe2488bd1b3
+ /etc/brltty/Text/bg.ttb ac1f07a0020d29bfa5078ce10cf94177
+ /etc/brltty/Text/bh.ttb 7004214b7e2772a41d367b99892d5935
+ /etc/brltty/Text/blocks.tti 409288193fda56e549891cf87dabe879
+ /etc/brltty/Text/bn.ttb 533d3b1801ca5ff8ec844dd6f36555bd
+ /etc/brltty/Text/bo.ttb 8ec98d49ab8be7e55d40b5d224a7f1bf
+ /etc/brltty/Text/boxes.tti c82249e02a5ba21aa8096201ad7162cb
+ /etc/brltty/Text/bra.ttb 6c957098d0482e173961e127d7db884b
+ /etc/brltty/Text/brf.ttb ec59f37b59e90728eca9a11ad87321d6
+ /etc/brltty/Text/common.tti 5a654878126edcfa9bc96d7ddc09dbb5
+ /etc/brltty/Text/cs.ttb 07d8dbe8882cae00239bc02c384fe5fc
+ /etc/brltty/Text/ctl-latin.tti a65670bcc53a6b979abf38fd6a4faf3f
+ /etc/brltty/Text/cy.ttb 8d913915a5b64af081317a9313488ecc
+ /etc/brltty/Text/da-1252.ttb 8006fc7e85d945bbaf4949d57a073d70
+ /etc/brltty/Text/da-lt.ttb a64f9ec6b6f19462506d6c749ef18829
+ /etc/brltty/Text/da.ttb 71c8e3f5ebee57138c2851d8ebb69f01
+ /etc/brltty/Text/de-chess.tti 3b5c2e91268f739a93741e46dfd3242d
+ /etc/brltty/Text/de.ttb 0d52f0cdc3b8dde255224d0e9e49a5eb
+ /etc/brltty/Text/devanagari.tti 12108afdf25291389915ea56e8a24c5c
+ /etc/brltty/Text/dra.ttb 8a2515cdbf52b35db093ae7177c5362b
+ /etc/brltty/Text/el.ttb eae2b25bfd5ed3b1b4aabce85e0025b1
+ /etc/brltty/Text/en-chess.tti cd30acf91347eddbd8781595a3240bc9
+ /etc/brltty/Text/en-na-ascii.tti 2e7578f89126f2ed448117671caf8dc1
+ /etc/brltty/Text/en-nabcc.ttb 371e5047425f7f7b40d769ec071b869f
+ /etc/brltty/Text/en.ttb fc59c58d13cd8e6d4578f0d15afb0915
+ /etc/brltty/Text/en_CA.ttb 99df0e0339b3d7b3645776c477b66f90
+ /etc/brltty/Text/en_GB.ttb 2e79a12b84b6578f6931e163c8455ce5
+ /etc/brltty/Text/en_US.ttb 4b33caddbd4017bfde45b21ccca7b5ce
+ /etc/brltty/Text/eo.ttb 6baea88235ba1b7efd04a7730efdfebf
+ /etc/brltty/Text/es.ttb d39fba0bf62b4face0c6e1a698727498
+ /etc/brltty/Text/et.ttb da4a1b476551d9d9ad5d8d477571c5b0
+ /etc/brltty/Text/fi.ttb 1e438211cbaaf8be8fd99a9f767c8b4a
+ /etc/brltty/Text/fr-2007.ttb 3bdeb898bd69a3590a3c18c4fff97a9a
+ /etc/brltty/Text/fr-cbifs.ttb 2d358ce3655db4df923633b538940b85
+ /etc/brltty/Text/fr-vs.ttb 0863862f4d328d65a35053353cfb8b75
+ /etc/brltty/Text/fr.ttb 2922ae232252ecd7a158a299bebf32aa
+ /etc/brltty/Text/fr_CA.ttb afe2e3100fd86a6a371166a695ed5f29
+ /etc/brltty/Text/fr_FR.ttb 73c9fc99fc678a3393eb64191eebdb1f
+ /etc/brltty/Text/ga.ttb e88ad958c389b1cd1c3120bb4cae03d5
+ /etc/brltty/Text/gd.ttb a9b0bdc8300171521c48c8734a50e663
+ /etc/brltty/Text/gon.ttb 71cb941e71d8056be296927a474eb00f
+ /etc/brltty/Text/greek.tti 36418c09f11a418fdfc6cfcfa4b1fdfb
+ /etc/brltty/Text/gu.ttb 3ab8b6bc56ba734eea32c662c3ec5710
+ /etc/brltty/Text/gujarati.tti d9f2ec47c6e27f188bf5ee3612853502
+ /etc/brltty/Text/gurmukhi.tti 2c8f9455de49d70536041e0e5c892998
+ /etc/brltty/Text/he.ttb 8fbcb31b856f17fc32b797d93ad64881
+ /etc/brltty/Text/hi.ttb 65782673fc541333f191fca3bde506e9
+ /etc/brltty/Text/hr.ttb 51b88f214a9e4689a4f8cc4f9aa08162
+ /etc/brltty/Text/hu.ttb 5446a0cf35a2917964ad130723d0d2cb
+ /etc/brltty/Text/hy.ttb b4bc67cbbfb434f8289d4627650102ba
+ /etc/brltty/Text/is.ttb 3818b9947debdecd8ff0f30169b622af
+ /etc/brltty/Text/it.ttb 6eac742764d4b17f97fe6849cb50c45c
+ /etc/brltty/Text/kannada.tti 1559fba6a5e52aac7b9282bd3f4f16c3
+ /etc/brltty/Text/kha.ttb 5052d70b336f7b0886c7d99a49be3cc5
+ /etc/brltty/Text/kn.ttb 00a420b21c3435500dbe4ef380fd487f
+ /etc/brltty/Text/kok.ttb 92440a9f8021270300684bffc49620e3
+ /etc/brltty/Text/kru.ttb f15e487f621be520ce8d40409c3ce6de
+ /etc/brltty/Text/lt.ttb 01de1b97c77ffa795de35f45d85bddaf
+ /etc/brltty/Text/ltr-alias.tti 8dad26aa3bfb100a6085598e101a21f2
+ /etc/brltty/Text/ltr-cyrillic.tti 219b3a4ee132a79c27b8b6c05a85d949
+ /etc/brltty/Text/ltr-dot8.tti 1b7aad5c7dd4d275123171bccccf4fcc
+ /etc/brltty/Text/ltr-latin.tti 8a09044b6016908e6476aee539dbbf1b
+ /etc/brltty/Text/ltr-tibetan.tti 2aea321ec5ff6b450358481cce60c31d
+ /etc/brltty/Text/lv.ttb 9ecd3da004f0fb0e8578e27e83954bc8
+ /etc/brltty/Text/malayalam.tti 904a407c2a94694e1f5bd6b5da9e998d
+ /etc/brltty/Text/mg.ttb 2bf7ded949afb7273202490fc58cbbf0
+ /etc/brltty/Text/mi.ttb 17c828c9b6bfba34a443c6ac3467a8c4
+ /etc/brltty/Text/ml.ttb fc811853e5e1c5ae9400da47e84a1f9e
+ /etc/brltty/Text/mni.ttb 1c67808b117182d0a75837fb4e703a8a
+ /etc/brltty/Text/mr.ttb ebf4b0347375434fa33935b2c462a916
+ /etc/brltty/Text/mt.ttb 5b29b67e1f068029047308b4f5e8bacd
+ /etc/brltty/Text/mun.ttb 369e5a41a15f3778c75a34f2aefa4a0e
+ /etc/brltty/Text/mwr.ttb e23ae60079cf125f138b5d14219b2ea3
+ /etc/brltty/Text/ne.ttb e41ca5418f7856db714b776afc0f28f0
+ /etc/brltty/Text/new.ttb 675e4e6055a9401c2066c4dfefadb758
+ /etc/brltty/Text/nl.ttb 9ed8ebfb6877a1dcac4e1bd9954b9853
+ /etc/brltty/Text/nl_BE.ttb 49fad6e4efc37bc1a3fa3c0436d7868f
+ /etc/brltty/Text/nl_NL.ttb 2f0fa53c04764a703037a8a32bbe73d4
+ /etc/brltty/Text/no-generic.ttb 8ab37ab6669513c85294c8a4b2b83819
+ /etc/brltty/Text/no-oup.ttb 49faa8965366623556deb96b90aa7a88
+ /etc/brltty/Text/no.ttb 4f3013ea38dfc23afae9dca45785be50
+ /etc/brltty/Text/num-alias.tti 873c53da574e555158e83f5a1bcf1a70
+ /etc/brltty/Text/num-dot6.tti 2204992760aa34b7e88ac84e037766f1
+ /etc/brltty/Text/num-dot8.tti a27088d905810d44e31ff9b5b0052f14
+ /etc/brltty/Text/num-french.tti 93b161e77a789cf58a8572937ca3a0e9
+ /etc/brltty/Text/num-nemd8.tti a190276c4ba8711a36d6f74ea6a561f1
+ /etc/brltty/Text/num-nemeth.tti efb283cf1cdc9dcfd2d56b7beed9872c
+ /etc/brltty/Text/nwc.ttb 38bb8bd3ac5fd5dee0b5fbfe06beca4a
+ /etc/brltty/Text/or.ttb b4b1698cad48fb5f823293aff238618b
+ /etc/brltty/Text/oriya.tti 69b46b3a6d5e5a2e996ea757d3ce11d3
+ /etc/brltty/Text/pa.ttb 8768904fd8578ce2700f628346d74770
+ /etc/brltty/Text/pi.ttb 4d5bbfb5141be8ebed216d7564199b1d
+ /etc/brltty/Text/pl.ttb cc26eff35515b886eedd96d26356c238
+ /etc/brltty/Text/pt.ttb 332039c0802f5e70947bb637f82c94fd
+ /etc/brltty/Text/punc-alternate.tti 6973caff927407e9d822341e588af5b8
+ /etc/brltty/Text/punc-basic.tti a87c02d2b019db70f733750075ec6009
+ /etc/brltty/Text/punc-tibetan.tti 787e8d6392019bf577ac4b82ce26e4fe
+ /etc/brltty/Text/ro.ttb f3cdbc2f028e4ac907a347fdacfd044a
+ /etc/brltty/Text/ru.ttb bea273aba19e917d9a14bbcf70f1a364
+ /etc/brltty/Text/sa.ttb 22114ac1c6bfa69e8af820eba65bb285
+ /etc/brltty/Text/sat.ttb b7b3bd5e0f97627986d33a3ad189830a
+ /etc/brltty/Text/sd.ttb 0386cc2f8d4df9de3ae59f0ba005e25b
+ /etc/brltty/Text/sk.ttb 6c6f487cd5be03fb62930968b0fa85e7
+ /etc/brltty/Text/sl.ttb e2ae9684f35f5711f1d7c78887a7eb43
+ /etc/brltty/Text/spaces.tti 78e571fa91e6448228eecdc1d11c1f0c
+ /etc/brltty/Text/sv-1989.ttb 5807d215748e3c203d1f7f0e956b788e
+ /etc/brltty/Text/sv-1996.ttb 5752a3029416c64e41dba7482ee9c5ef
+ /etc/brltty/Text/sv.ttb 59ef170039b9daa1c6e85406489ba79c
+ /etc/brltty/Text/sw.ttb c7bf15eb2435dfc0c6e3ec70f58df6f3
+ /etc/brltty/Text/ta.ttb c31e03609344b17ba4b322b9bd3f91e4
+ /etc/brltty/Text/tamil.tti 71cfa5732861636ffe768a627ad4e603
+ /etc/brltty/Text/te.ttb a7e8c4b371465eabe3a445091723bc36
+ /etc/brltty/Text/telugu.tti f78df25d81ef78b8e3078df0ab290107
+ /etc/brltty/Text/tr.ttb c4e1e32dd47afdd60c763b59ed3a873c
+ /etc/brltty/Text/vi.ttb f658f5846db496136d4e99db1e566b50
+Description: Access software for a blind person using a braille display
+ BRLTTY is a daemon which provides access to the console (text mode)
+ for a blind person using a braille display.  It drives the braille
+ display and provides complete screen review functionality.
+ The following display models are supported:
+  * Alva/Optelec (ABT3xx, Delphi, Satellite, Braille System 40, BC 640/680)
+  * Baum
+  * BrailComm
+  * BrailleLite
+  * BrailleNote
+  * Cebra
+  * EcoBraille
+  * EuroBraille (AzerBraille, Clio, Esys, Iris, NoteBraille, Scriba)
+  * Freedom Scientific (Focus and PacMate)
+  * Handy Tech
+  * HIMS (Braille Sense, SyncBraille)
+  * HumanWare (Brailliant)
+  * Iris
+  * LogText 32
+  * MDV
+  * Metec (BD-40)
+  * NinePoint
+  * Papenmeier
+  * Pegasus
+  * Seika
+  * Tieman (Voyager, CombiBraille, MiniBraille, MultiBraille,
+            BraillePen/EasyLink)
+  * Tivomatic (Albatross)
+  * TSI (Navigator, PowerBraille)
+  * VideoBraille
+  * VisioBraille
+ .
+ BRLTTY also provides a client/server based infrastructure for applications
+ wishing to utilize a Braille display.  The daemon process listens for incoming
+ TCP/IP connections on a certain port.  A shared object library for clients is
+ provided in the package libbrlapi0.6.  A static library, header files and
+ documentation is provided in package libbrlapi-dev.  Bindings to other
+ programming languages can be found in cl-brlapi (Lisp), libbrlapi-java (Java)
+ and python-brlapi (Python).
+Homepage: https://brltty.com
+Original-Maintainer: Debian Accessibility Team <pkg-a11y-devel@lists.alioth.debian.org>
+
+Package: accountsservice
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 440
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.6.45-1ubuntu1.3
+Depends: dbus, libaccountsservice0 (= 0.6.45-1ubuntu1.3), libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libpolkit-gobject-1-0 (>= 0.99)
+Suggests: gnome-control-center
+Conffiles:
+ /etc/dbus-1/system.d/org.freedesktop.Accounts.conf 06247d62052029ead7d9ec1ef9457f42
+Description: query and manipulate user account information
+ The AccountService project provides a set of D-Bus
+ interfaces for querying and manipulating user account
+ information and an implementation of these interfaces,
+ based on the useradd, usermod and userdel commands.
+Homepage: https://www.freedesktop.org/wiki/Software/AccountsService/
+Original-Maintainer: Debian freedesktop.org maintainers <pkg-freedesktop-maintainers@lists.alioth.debian.org>
+
+Package: libpng-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 595
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libpng1.6
+Version: 1.6.34-1ubuntu0.18.04.2
+Replaces: libpng16-dev (<< 1.6.20-3), libpng16-devtools (<< 1.6.21-1)
+Depends: libpng16-16 (= 1.6.34-1ubuntu0.18.04.2), zlib1g-dev
+Recommends: libpng-tools
+Breaks: libpng16-dev (<< 1.6.20-3), libpng16-devtools (<< 1.6.21-1)
+Conflicts: libpng12-0-dev, libpng12-dev, libpng2-dev, libpng3-dev
+Description: PNG library - development (version 1.6)
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the header and development files needed to build
+ programs and packages using libpng.
+Homepage: http://libpng.org/pub/png/libpng.html
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+
+Package: netbase
+Status: install ok installed
+Priority: important
+Section: admin
+Installed-Size: 44
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Version: 5.4
+Conffiles:
+ /etc/protocols bb9c019d6524e913fd72441d58b68216
+ /etc/rpc f0b6f6352bf886623adc04183120f83b
+ /etc/services 567c100888518c1163b3462993de7d47
+Description: Basic TCP/IP networking system
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking.
+Original-Maintainer: Marco d'Itri <md@linux.it>
+
