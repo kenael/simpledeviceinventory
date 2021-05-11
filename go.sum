@@ -1,2 +1,4 @@
 github.com/kenael/go-dpkg v0.0.0-20210508064211-40729d4f2bab h1:mWDttRlqqwtBK14IfDeUF49SHVpNJ6YXiP+D8js9FrM=
 github.com/kenael/go-dpkg v0.0.0-20210508064211-40729d4f2bab/go.mod h1:TFrMV6qQh0zb4bdiyIwpT4lWmlA9JcrsMvY8GPx45Xs=
+github.com/zcalusic/sysinfo v0.0.0-20210226105846-b810d137e525 h1:kaA57BgcZslwF+qzEiZEQfAfx1ZE6PuaSdxGP9ZKy04=
+github.com/zcalusic/sysinfo v0.0.0-20210226105846-b810d137e525/go.mod h1:WGLNaWsjKQ2gXmAHh+MQztgu3FLFAnOFJjFzhpgShCY=

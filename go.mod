@@ -2,4 +2,7 @@ module github.com/kenael/simpledeviceinventory
 
 go 1.16
 
-require github.com/kenael/go-dpkg v0.0.0-20210508064211-40729d4f2bab // indirect
+require (
+	github.com/kenael/go-dpkg v0.0.0-20210508064211-40729d4f2bab // indirect
+	github.com/zcalusic/sysinfo v0.0.0-20210226105846-b810d137e525 // indirect
+)
