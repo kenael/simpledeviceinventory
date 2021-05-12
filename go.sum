@@ -1,4 +1,6 @@
-github.com/kenael/go-dpkg v0.0.0-20210508064211-40729d4f2bab h1:mWDttRlqqwtBK14IfDeUF49SHVpNJ6YXiP+D8js9FrM=
-github.com/kenael/go-dpkg v0.0.0-20210508064211-40729d4f2bab/go.mod h1:TFrMV6qQh0zb4bdiyIwpT4lWmlA9JcrsMvY8GPx45Xs=
+github.com/kenael/go-dpkg v0.0.0-20210511232324-aacfa8cc5534 h1:MQQ9wJRjnDILdVL4xbyPBmAlWXlYBIS5tvyvMaZXtnU=
+github.com/kenael/go-dpkg v0.0.0-20210511232324-aacfa8cc5534/go.mod h1:m7ColtHuqMyjHJUSi4E3eRl1l4/9WDftpWilEE6l2Sw=
+github.com/kenael/go-dpkg v0.0.0-20210512091931-b8f764e7aac1 h1:C29bmBOPbMclmv2UU4+uNCoWnOIk8YICr7RdzEFUgHY=
+github.com/kenael/go-dpkg v0.0.0-20210512091931-b8f764e7aac1/go.mod h1:m7ColtHuqMyjHJUSi4E3eRl1l4/9WDftpWilEE6l2Sw=
 github.com/zcalusic/sysinfo v0.0.0-20210226105846-b810d137e525 h1:kaA57BgcZslwF+qzEiZEQfAfx1ZE6PuaSdxGP9ZKy04=
 github.com/zcalusic/sysinfo v0.0.0-20210226105846-b810d137e525/go.mod h1:WGLNaWsjKQ2gXmAHh+MQztgu3FLFAnOFJjFzhpgShCY=
