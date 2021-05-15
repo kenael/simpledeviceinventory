@@ -12,7 +12,7 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/recover"
 )
 
-type systemValues struct {
+type SystemValues struct {
 	MachineID string 
 	Packages []env.Package 
 	SysInfo sysinfo.SysInfo
@@ -36,6 +36,7 @@ func Server() {
 	system := app.Group("/system")
 	system.Post("/:machineID", receivSystem)
 	system.Post("/:machineID/packages", receivPackages)
+	system.Post("/:machineID/user", receivUser)
     app.Listen(":"+port)
 }
 
@@ -54,6 +55,7 @@ func receivSystem(c *fiber.Ctx) error {
 		log.Println("Parser Error")
 		return fiber.NewError(fiber.StatusInternalServerError, "Parser Error")
 	}
+	StoreSystemValues(c.Params("machineID"), c.Body())
 	log.Printf("Hostname: %s  ", payload.Node.Hostname)
 	return c.JSON(payload)
 }
@@ -68,11 +70,21 @@ func receivPackages(c *fiber.Ctx) error {
 		log.Println("Parser Error")
 		
 	}
-	for key, item := range payload {
-		log.Printf("%v Item: %s Version: %s ",key, item.Package, item.Version)
-	}
+	StorePackagesValues(c.Params("machineID"), payload)
+	// for key, item := range payload {
+	// 	log.Printf("%v Item: %s Version: %s ",key, item.Package, item.Version)
+	// }
 	// log.Printf("Payload: %v ", payload)
 	return c.SendString("ok")
 
 
+}
+
+func receivUser(c *fiber.Ctx) error {
+	c.Accepts("application/json", "text")
+	log.Printf("Param machineID: %s\n", c.Params("machineID"))
+
+	StoreSystemUser(c.Params("machineID"), c.Body())
+	
+	return c.SendString("ok")
 }

@@ -35,5 +35,6 @@ func main() {
 	// test
 	client.SendSystem( machineID, system)
 	client.SendPackages(machineID, pack)
+	client.SendUser(machineID, user)
 
 }
