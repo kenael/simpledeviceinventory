@@ -10,10 +10,11 @@ import (
 	"encoding/json"
 )
 
-var systemuser = []*user.User{}
+
 
 
 func GetKnownUser() ([]byte, error) {
+	var systemuser = []*user.User{}
 	var UID int
 	files, err := filepath.Glob("/home/*")
     if err != nil {

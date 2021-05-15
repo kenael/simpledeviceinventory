@@ -4,22 +4,17 @@
 package debian
 
 import (
+	"github.com/kenael/simpledeviceinventory/env"
 	"github.com/kenael/go-dpkg"
 	//"fmt"
 	"encoding/json"
 	"strings"
 )
 
-type Package struct {
-	Package string `json:"package"`
-	Version string `json:"version"`
-	Status string `json:"status"`
-}
-
 func GetPackagesJSON(file string) ([]byte , error ) {
-	getPackage := []Package{}
+	getPackage := []env.Package{}
 
-	pack := Package{}
+	pack := env.Package{}
 
 	packages, err := dpkg.ReadPackagesFromFile(file)
 	if err != nil {

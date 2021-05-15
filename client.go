@@ -5,6 +5,7 @@ import (
 	debian "github.com/kenael/simpledeviceinventory/debian"
 	"github.com/kenael/simpledeviceinventory/system"
 	"github.com/kenael/simpledeviceinventory/user"
+	"github.com/kenael/simpledeviceinventory/client"
 )
 
 func main() {
@@ -17,10 +18,11 @@ func main() {
 	}
 	fmt.Println(string(pack))
 	
-	system, err := system.GetSystemInfo() 
+	machineID, system, err := system.GetSystemInfo() 
 	if err != nil {
 		fmt.Println("Error ", err)
 	}
+	fmt.Println(machineID)
 	fmt.Println(string(system))
 
 	user, err := user.GetKnownUser() 
@@ -29,5 +31,9 @@ func main() {
 
 	}
 	fmt.Println(string(user))
+
+	// test
+	client.SendSystem( machineID, system)
+	client.SendPackages(machineID, pack)
 
 }

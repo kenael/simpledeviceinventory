@@ -6,6 +6,10 @@ github.com/kenael/go-dpkg v0.0.0-20210511232324-aacfa8cc5534 h1:MQQ9wJRjnDILdVL4
 github.com/kenael/go-dpkg v0.0.0-20210511232324-aacfa8cc5534/go.mod h1:m7ColtHuqMyjHJUSi4E3eRl1l4/9WDftpWilEE6l2Sw=
 github.com/kenael/go-dpkg v0.0.0-20210512091931-b8f764e7aac1 h1:C29bmBOPbMclmv2UU4+uNCoWnOIk8YICr7RdzEFUgHY=
 github.com/kenael/go-dpkg v0.0.0-20210512091931-b8f764e7aac1/go.mod h1:m7ColtHuqMyjHJUSi4E3eRl1l4/9WDftpWilEE6l2Sw=
+github.com/kenael/go-dpkg v0.0.0-20210513225233-5297f53592e6 h1:eR2UrD1A6oDWx+jOU1eCe3eKe9ZcxXk/pKW7wD1AGCY=
+github.com/kenael/go-dpkg v0.0.0-20210513225233-5297f53592e6/go.mod h1:m7ColtHuqMyjHJUSi4E3eRl1l4/9WDftpWilEE6l2Sw=
+github.com/kenael/go-dpkg v0.0.4 h1:nDVYGWItgrBGUDBYX6Aj6tO5iLLF5ZAe5tQST4oRBwU=
+github.com/kenael/go-dpkg v0.0.4/go.mod h1:m7ColtHuqMyjHJUSi4E3eRl1l4/9WDftpWilEE6l2Sw=
 github.com/klauspost/compress v1.11.8/go.mod h1:aoV0uJVorq1K+umq18yTdKaF57EivdYsUV+/s2qKfXs=
 github.com/klauspost/compress v1.11.13 h1:eSvu8Tmq6j2psUJqJrLcWH6K3w5Dwc+qipbaA6eVEN4=
 github.com/klauspost/compress v1.11.13/go.mod h1:aoV0uJVorq1K+umq18yTdKaF57EivdYsUV+/s2qKfXs=
