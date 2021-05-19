@@ -4,15 +4,26 @@ import (
 	"bytes"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
+
+	"github.com/kenael/simpledeviceinventory/env"
 )
 
 func SendSystem(machineID string, data []byte) {
-	url := fmt.Sprintf("http://192.168.0.106:3000/system/%s", machineID)
+	url := fmt.Sprintf("%s://%s:%s/system/%s",
+		env.GetEnv("SERVER_PROTO", "http"),
+		env.GetEnv("SERVER_URL", "localhost"),
+		env.GetEnv("SERVER_PORT", "3000"),
+		machineID,
+	)
 	fmt.Println("URL:>", url)
 
 	var jsonStr = data
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+	if err != nil {
+		log.Fatal("Create Request failed")
+	}
 	req.Header.Set("X-Custom-Header", "myvalue")
 	req.Header.Set("Content-Type", "application/json")
 
@@ -30,11 +41,19 @@ func SendSystem(machineID string, data []byte) {
 }
 
 func SendPackages(machineID string, data []byte) {
-	url := fmt.Sprintf("http://192.168.0.106:3000/system/%s/packages", machineID)
+	url := fmt.Sprintf("%s://%s:%s/system/%s/packages",
+		env.GetEnv("SERVER_PROTO", "http"),
+		env.GetEnv("SERVER_URL", "localhost"),
+		env.GetEnv("SERVER_PORT", "3000"),
+		machineID,
+	)
 	fmt.Println("URL:>", url)
 
 	var jsonStr = data
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+	if err != nil {
+		log.Fatal("Create Request failed")
+	}
 	req.Header.Set("X-Custom-Header", "myvalue")
 	req.Header.Set("Content-Type", "application/json")
 
