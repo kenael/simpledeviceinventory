@@ -35,6 +35,9 @@ func SendPackages(machineID string, data []byte, serverUrl string) {
 
 	var jsonStr = data
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+	if err != nil {
+		fmt.Println("Create Request failed")
+	}
 	req.Header.Set("X-Custom-Header", "myvalue")
 	req.Header.Set("Content-Type", "application/json")
 
@@ -57,6 +60,9 @@ func SendUser(machineID string, data []byte, serverUrl string) {
 
 	var jsonStr = data
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+	if err != nil {
+		fmt.Println("Create Request failed")
+	}
 	req.Header.Set("X-Custom-Header", "myvalue")
 	req.Header.Set("Content-Type", "application/json")
 
