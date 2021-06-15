@@ -3,12 +3,25 @@ package main
 import (
 	"fmt"
 	debian "github.com/kenael/simpledeviceinventory/debian"
+	"github.com/kenael/simpledeviceinventory/env"
 	"github.com/kenael/simpledeviceinventory/system"
 	"github.com/kenael/simpledeviceinventory/user"
 	"github.com/kenael/simpledeviceinventory/client"
+	"github.com/go-gcfg/gcfg"
 )
 
 func main() {
+
+	cfg := struct {
+		Server struct {
+			Url string
+		}
+	}{}
+	configFile := env.GetEnv("SIMPLEDEVINV_CONFIG_FILE", "client.conf")
+        err := gcfg.FatalOnly(gcfg.ReadFileInto(&cfg, configFile))
+        if err != nil {
+                fmt.Println("ERROR  can't read Configfile", err)
+        }
 
 	// Get Installed Packages
 	// Ubuntu Default: /var/lib/dpkg/status
@@ -33,8 +46,8 @@ func main() {
 	fmt.Println(string(user))
 
 	// test
-	client.SendSystem( machineID, system)
-	client.SendPackages(machineID, pack)
-	client.SendUser(machineID, user)
+	client.SendSystem( machineID, system, cfg.Server.Url)
+	client.SendPackages(machineID, pack, cfg.Server.Url)
+	client.SendUser(machineID, user, cfg.Server.Url)
 
 }

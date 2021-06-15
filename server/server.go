@@ -10,6 +10,8 @@ import (
 	"log"
 	"github.com/zcalusic/sysinfo"
 	"github.com/gofiber/fiber/v2/middleware/recover"
+	"github.com/go-gcfg/gcfg"
+    	"database/sql"
 )
 
 type SystemValues struct {
@@ -19,8 +21,36 @@ type SystemValues struct {
 }
 
 func Server() {
-	port := env.GetEnv("SERVER_PORT", "3000")
+	Cfg := struct {
+		Server struct {
+			Port string
+		}
+		Database struct {
+			User string
+			Password string
+			DbServer string
+			DbServerport string
+			Database string
+			Option string
 
+		}
+	}{}
+	configFile := env.GetEnv("SIMPLEDEVINV_CONFIG_FILE", "server.conf")
+	err := gcfg.FatalOnly(gcfg.ReadFileInto(&Cfg, configFile))
+        if err != nil {
+		log.Fatal("ERROR  can't read Configfile", err)
+	}
+	// start Connect DB
+	DB, err = sql.Open("postgres", "postgres://" + Cfg.Database.User +
+	  ":" + Cfg.Database.Password +
+	  "@"+ Cfg.Database.DbServer + ":"+ Cfg.Database.DbServerport +
+	  "/"+ Cfg.Database.Database + Cfg.Database.Option)
+        if err != nil {
+           log.Fatal(err)
+        }
+
+	log.Printf("Database Connect %s Port %s Database %s as User %s", Cfg.Database.DbServer, Cfg.Database.DbServerport, Cfg.Database.Database, Cfg.Database.User)
+	// start Webserver
 	app := fiber.New()
 	app.Use(recover.New()) // Error handling
 	// Logging
@@ -37,7 +67,7 @@ func Server() {
 	system.Post("/:machineID", receivSystem)
 	system.Post("/:machineID/packages", receivPackages)
 	system.Post("/:machineID/user", receivUser)
-    app.Listen(":"+port)
+    app.Listen(":"+Cfg.Server.Port)
 }
 
 func helloWorld(c *fiber.Ctx) error {

@@ -19,6 +19,8 @@ type System struct {
 
 type Attrs map[string]interface{}
 
+var DB *sql.DB
+
 func (a Attrs) Value() (driver.Value, error) {
     return json.Marshal(a)
 }
@@ -32,36 +34,24 @@ func (a *Attrs) Scan(value interface{}) error {
     return json.Unmarshal(b, &a)
 }
 
+
 func StoreSystemValues(machineID string, payload []byte) error {
-    db, err := sql.Open("postgres", "postgres://root:testtest22@192.168.0.15/test01?sslmode=disable")
-    if err != nil {
-        log.Fatal(err)
-    }
-	defer db.Close()
 	system := new(System)
 	json.Unmarshal([]byte(payload), &system.Attrs)
 	
 	log.Printf("test %v", system.Attrs)
 	system.MachineID = machineID
-    _, err = db.Exec("INSERT INTO system (machineid,attrs) VALUES($1, $2) ON CONFLICT (machineid) DO UPDATE SET attrs = $2;",system.MachineID, system.Attrs)
-    if err != nil {
-        log.Fatal(err)
-    }
+	_, err := DB.Exec("INSERT INTO system (machineid,attrs) VALUES($1, $2) ON CONFLICT (machineid) DO UPDATE SET attrs = $2;",system.MachineID, system.Attrs)
 
-    return err
+    return err 
 }
 
 func StorePackagesValues(machineID string, payload []env.Package) error {
-    db, err := sql.Open("postgres", "postgres://root:testtest22@192.168.0.15/test01?sslmode=disable")
-    if err != nil {
-        log.Fatal(err)
-    }
-	defer db.Close()
 	system := new(System)
 	system.Attrs = Attrs{"installed": payload}
 	
 	system.MachineID = machineID
-    _, err = db.Exec("INSERT INTO packages (machineid,attrs) VALUES($1, $2) ON CONFLICT (machineid) DO UPDATE SET attrs = $2;",system.MachineID, system.Attrs)
+	_, err := DB.Exec("INSERT INTO packages (machineid,attrs) VALUES($1, $2) ON CONFLICT (machineid) DO UPDATE SET attrs = $2;",system.MachineID, system.Attrs)
 	
     if err != nil {
         log.Fatal(err)
@@ -72,12 +62,6 @@ func StorePackagesValues(machineID string, payload []env.Package) error {
 
 
 func StoreSystemUser(machineID string, payload []byte) error {
-    db, err := sql.Open("postgres", "postgres://root:testtest22@192.168.0.15/test01?sslmode=disable")
-    if err != nil {
-        log.Fatal(err)
-    }
-	defer db.Close()
-
 	var users []string
 
 	system := new(System)
@@ -85,7 +69,7 @@ func StoreSystemUser(machineID string, payload []byte) error {
 	system.Attrs = Attrs{"users": users}
 
 	system.MachineID = machineID
-    _, err = db.Exec("INSERT INTO systemuser (machineid,attrs) VALUES($1, $2) ON CONFLICT (machineid) DO UPDATE SET attrs = $2;",system.MachineID, system.Attrs)
+	_, err := DB.Exec("INSERT INTO systemuser (machineid,attrs) VALUES($1, $2) ON CONFLICT (machineid) DO UPDATE SET attrs = $2;",system.MachineID, system.Attrs)
     if err != nil {
         log.Fatal(err)
     }

@@ -7,8 +7,8 @@ import (
 	"net/http"
 )
 
-func SendSystem(machineID string, data []byte) {
-	url := fmt.Sprintf("http://192.168.0.106:3000/system/%s", machineID)
+func SendSystem(machineID string, data []byte, serverUrl string) {
+	url := fmt.Sprintf(serverUrl + "/system/%s", machineID)
 	fmt.Println("URL:>", url)
 
 	var jsonStr = data
@@ -29,8 +29,8 @@ func SendSystem(machineID string, data []byte) {
 	fmt.Println("response Body:", string(body))
 }
 
-func SendPackages(machineID string, data []byte) {
-	url := fmt.Sprintf("http://192.168.0.106:3000/system/%s/packages", machineID)
+func SendPackages(machineID string, data []byte, serverUrl string) {
+	url := fmt.Sprintf(serverUrl + "/system/%s/packages", machineID)
 	fmt.Println("URL:>", url)
 
 	var jsonStr = data
@@ -51,8 +51,8 @@ func SendPackages(machineID string, data []byte) {
 	fmt.Println("response Body:", string(body))
 }
 
-func SendUser(machineID string, data []byte) {
-	url := fmt.Sprintf("http://192.168.0.106:3000/system/%s/user", machineID)
+func SendUser(machineID string, data []byte, serverUrl string) {
+	url := fmt.Sprintf(serverUrl + "/system/%s/user", machineID)
 	fmt.Println("URL:>", url)
 
 	var jsonStr = data
